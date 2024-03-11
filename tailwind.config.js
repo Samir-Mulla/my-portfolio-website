@@ -2,8 +2,26 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        customFont: ["urbanist", "sans-serif"],
+      },
+      colors: {
+        primaryColor: "#FCB8BB",
+        headingColor: "#081e21",
+        smallTextColor: "#193256",
+      },
+      animation: {
+        "fade-in": "fadeIn 5s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+      backgroundImage: { 'background1': "url('/bg1.svg')" }
+    },
+    plugins: [],
   },
-  plugins: [],
 };
-
