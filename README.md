@@ -1,6 +1,8 @@
-# Vite React TailwindCSS Project Template
+# My Portfolio Website
 
-This is a template repository for quickly setting up a React project with Tailwind CSS using Vite.
+## Introduction
+
+My Portfolio Website is a personal project designed to showcase my skills, projects, and experiences in web development. This project is built using modern web technologies and is intended to serve as a digital resume and a platform for sharing my work.
 
 ## Getting Started
 
