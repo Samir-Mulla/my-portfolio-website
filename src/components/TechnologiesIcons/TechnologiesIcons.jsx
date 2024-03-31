@@ -3,12 +3,14 @@ import htmlLogo from "/htmlLogo.svg";
 import cssLogo from "/cssLogo.svg";
 import javascriptLogo from "/javascriptLogo.svg";
 import reactLogo from "/reactLogo.svg";
-import svgLogo from "/svgLogo.svg"
+import svgLogo from "/svgLogo.svg";
+import vscodeLogo from "/vscodeLogo.svg";
+import figmaLogo from "/figmaLogo.svg";
 
 function TechnologiesIcons() {
   return (
     <>
-      <section className="px-10 py-16 font-customFont font-semibold">
+      <section className="px-10 py-16 font-customFont font-semibold selection:bg-yellow-300">
         <h1 className="text-center font-thin italic text-8xl">
           My <span className="underline ">Skills</span>:
         </h1>
@@ -41,6 +43,23 @@ function TechnologiesIcons() {
           <div className="text-center">
             <img src={cssLogo} alt="cssLogo" />
             <h3 className="">CSS3</h3>
+          </div>
+
+          <div className="text-center">
+            <img src={svgLogo} alt="svgLogo" />
+            <h3 className="">SVG</h3>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-around gap-3 mt-6 px-5 py-8">
+          <h1 className="text-3xl font-semibold italic">Tools : </h1>
+          <div className="text-center">
+            <img src={figmaLogo} alt="figmaLogo" />
+            <h3 className="">FIGMA</h3>
+          </div>
+          <div className="text-center">
+            <img src={vscodeLogo} alt="vscodeLogo" />
+            <h3 className="">VSCODE</h3>
           </div>
 
           <div className="text-center">

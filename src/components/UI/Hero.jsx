@@ -99,7 +99,7 @@ function Hero() {
           fontWeight="bold"
           fontStyle="italic"
           fontSize="1.3rem"
-          className="selection:bg-yellow-300 font-customFont "
+          className=":bg-yellow-300 font-customFont "
           fill="url(#TextGradient)"
           stroke="#fff"
           strokeDasharray={50}

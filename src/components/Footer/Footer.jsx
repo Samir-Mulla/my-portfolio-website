@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-800 text-white p-6 font-customFont">
-      <div className="container mx-auto flex flex-wrap justify-between">
+      <div className="flex flex-wrap justify-around">
         <div className="w-full md:w-1/3 mb-6 md:mb-0">
           <h5 className="font-bold mb-2">Services</h5>
           <ul className="list-none">
@@ -17,11 +17,6 @@ const Footer = () => {
             <li>
               <a href="#" className="text-white hover:text-gray-300">
                 UI/UX Design
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-white hover:text-gray-300">
-                Web Design
               </a>
             </li>
             <li>
@@ -46,12 +41,12 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="flex justify-center items-center mt-4">
-          <p className="text-center text-sm">
-            &copy; {year} Developed by Samir Mulla. All rights reserved.
-          </p>
-        </div>
+      <div className="flex justify-around mt-4">
+        <p className="text-center text-sm">
+          &copy; <span className="font-bold">{`${year}`}</span> Developed by{" "}
+          <span className="font-bold">Samir Mulla</span>. All rights reserved.
+        </p>
+        <p className=" text-sm">Privacy Policy Terms & Conditions.</p>
       </div>
     </footer>
   );
