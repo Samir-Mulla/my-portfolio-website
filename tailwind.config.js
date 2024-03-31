@@ -20,7 +20,10 @@ export default {
           "100%": { opacity: 1 },
         },
       },
-      backgroundImage: { 'background1': "url('/bg1.svg')" }
+      backgroundImage: {
+        background1: "url('/bg1.svg')",
+        background2: "url('/bg2.svg')",
+      },
     },
     plugins: [],
   },
