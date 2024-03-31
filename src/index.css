@@ -3,9 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* *{
+        
+*{
     background: rgba(0, 100, 33, 0.1);
-} */
+}
 
 
