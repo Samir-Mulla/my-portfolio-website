@@ -23,6 +23,8 @@ export default {
       backgroundImage: {
         background1: "url('/bg1.svg')",
         background2: "url('/bg2.svg')",
+        background3: "url('/bg3.svg')",
+        background4: "url('/bgfooterwave.svg')",
       },
     },
     plugins: [],
