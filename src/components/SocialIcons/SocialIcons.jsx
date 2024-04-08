@@ -1,5 +1,5 @@
 import React from "react";
-import GithubLogo from "/github-logo.svg";
+import GithubLogo1 from "/githubLogo1.svg";
 import LinkedinLogo from "/linkedin-logo.svg";
 
 function SocialIcons() {
@@ -9,14 +9,14 @@ function SocialIcons() {
         <p className="text-3xl font-bold italic  text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-black">
           <span className="">My Social Profiles :</span>
         </p>
-        <div className="flex justify-center items-center gap-8 mt-4">
+        <div className="flex justify-center items-center gap-8 mt-4 text-sm">
           <div>
             <a
               href="https://github.com/Samir-Mulla"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={GithubLogo} alt="Github Logo" />
+              <img src={GithubLogo1} alt="Github Logo" />
             </a>
           </div>
           <div>

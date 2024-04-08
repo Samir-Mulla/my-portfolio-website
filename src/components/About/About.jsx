@@ -4,10 +4,8 @@ import SocialIcons from "../SocialIcons/SocialIcons";
 function About() {
   return (
     <>
-      <section className="font-customFont">
-        <h1 className="text-center font-thin italic mt-32 text-8xl">
-          About Me :
-        </h1>
+      <section className="font-customFont mt-32">
+        <h1 className="text-center font-thin italic text-8xl">About Me :</h1>
 
         <div className="flex gap-10 px-10 py-16 bg-slate-100">
           <img

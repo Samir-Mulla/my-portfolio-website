@@ -6,7 +6,7 @@ function Navbar() {
       <nav className="lg:flex items-center md:flex hidden cursor-pointer font-semibold animate-fade-in">
         <ul className="flex gap-9 ">
           <li className="hover:underline underline-offset-8 decoration-2">
-            <a href="#about">About</a>
+            <a href="#about">About Me</a>
           </li>
           <li className="hover:underline underline-offset-8 decoration-2">
             <a href="#services">Projects</a>
