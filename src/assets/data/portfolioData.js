@@ -18,7 +18,7 @@ const portfolios = [
   },
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg02,
     category: "Web Design",
     title: "Technology website",
     description:
@@ -28,7 +28,7 @@ const portfolios = [
   },
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg03,
     category: "Web Design",
     title: "Technology website",
     description:
@@ -38,7 +38,7 @@ const portfolios = [
   },
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg04,
     category: "Web Design",
     title: "Technology website",
     description:
@@ -48,7 +48,7 @@ const portfolios = [
   },
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg05,
     category: "Web Design",
     title: "Technology website",
     description:
@@ -58,7 +58,7 @@ const portfolios = [
   },
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: portfolioImg06,
     category: "Web Design",
     title: "Technology website",
     description:
@@ -67,3 +67,5 @@ const portfolios = [
     siteUrl : "#",
   },
 ];
+
+export default portfolios;
