@@ -1,8 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { handlePhoneNumberChange } from "../../hooks/usehandlePhoneNumberChange";
-
-
 
 function PortfolioForm() {
   const {
@@ -11,6 +8,16 @@ function PortfolioForm() {
     formState: { errors },
     reset,
   } = useForm();
+
+
+  // Use state to manage the phone number value
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const handlePhoneNumberChange = (e) => {
+    const inputValue = e.target.value;
+    const numericValue = inputValue.replace(/\D/g, ""); // Remove non-numeric characters
+    setPhoneNumber(numericValue);
+  };
 
   const onSubmit = async (data) => {
     const formData = new FormData();
@@ -32,20 +39,22 @@ function PortfolioForm() {
 
     if (res.success) {
       console.log("Success", res);
-      reset();
-      alert(`form data sent Successfully !`);
+      reset(); // Reset the form
+      setPhoneNumber(""); // Clear the phone number state
+      alert(`Form data sent successfully!`);
     }
   };
 
   return (
     <>
-      <section className="mt-32 bg-background3 bg-no-repeat">
+      <section
+        id="contactMe"
+        className="mt-32 bg-background3 bg-no-repeat scroll-mt-20"
+      >
         <h1 className="text-center font-thin italic text-8xl font-customFont">
-          <span className="underline">Form</span>:
+          Contact<span className="underline">Me</span> :
         </h1>
-        
-          
-        
+
         <div className="py-20 font-customFont">
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -106,6 +115,7 @@ function PortfolioForm() {
                 {...register("phone", {
                   required: true,
                 })}
+                value={phoneNumber} // Use state value for the input
                 onChange={handlePhoneNumberChange}
                 maxLength={10}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm border text-xl px-3 py-3"
@@ -124,8 +134,8 @@ function PortfolioForm() {
               </label>
               <input
                 type="text"
-                id="BusinessSector "
-                {...register("BusinessSector ", { required: true })}
+                id="BusinessSector"
+                {...register("BusinessSector", { required: true })}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm border text-xl px-3 py-3"
                 placeholder="Enter your Sector eg: Ecommerce, Healthcare."
               />
