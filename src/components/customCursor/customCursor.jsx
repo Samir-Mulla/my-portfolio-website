@@ -8,7 +8,7 @@ const CustomCursor = () => {
         innerSize={25}
         outerSize={10}
         outerAlpha={0.2}
-        color="0, 0, 0"
+        color="186,0,0"
         innerScale={0.7}
         outerScale={10}
         clickables={[
