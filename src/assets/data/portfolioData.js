@@ -1,70 +1,26 @@
-import portfolioImg01 from "../images/portfolio-01.jpg";
-import portfolioImg02 from "../images/portfolio-02.jpg";
-import portfolioImg03 from "../images/portfolio-03.jpg";
-import portfolioImg04 from "../images/portfolio-04.jpg";
-import portfolioImg05 from "../images/portfolio-05.jpg";
-import portfolioImg06 from "../images/portfolio-06.jpg";
+import College_Website from "/college-website-ui-1.png";
+import Ecommerce_Website from "/Ecommerce-website-ui-2.png";
 
 const portfolios = [
   {
     id: "01",
-    imgUrl: portfolioImg01,
+    imgUrl: College_Website,
     category: "Web Design",
-    title: "Technology website",
+    title: "College website",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut asperiores, consequuntur, quisquam deleniti ducimus maiores, nam soluta nostrum unde fugiat nulla? Unde exercitationem consectetur deleniti quod nam cupiditate quas!",
-    technologies: ["React", "Tailwindcss", "Node.js", "MongoDB"],
-    siteUrl : "#",
+      "As the front-end developer of this college website, I focused on creating a modern and responsive user experience using React for dynamic content rendering and Vite for optimized build times. With a clean, CSS-based design.",
+    technologies: ["React", "css", "vite", "Node.js"],
+    siteUrl: "https://ilmcollege.netlify.app/",
   },
   {
-    id: "01",
-    imgUrl: portfolioImg02,
+    id: "02",
+    imgUrl: Ecommerce_Website,
     category: "Web Design",
-    title: "Technology website",
+    title: "Ecommerce website",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut asperiores, consequuntur, quisquam deleniti ducimus maiores, nam soluta nostrum unde fugiat nulla? Unde exercitationem consectetur deleniti quod nam cupiditate quas!",
-    technologies: ["React", "Tailwindcss", "Node.js", "MongoDB"],
-    siteUrl : "#",
-  },
-  {
-    id: "01",
-    imgUrl: portfolioImg03,
-    category: "Web Design",
-    title: "Technology website",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut asperiores, consequuntur, quisquam deleniti ducimus maiores, nam soluta nostrum unde fugiat nulla? Unde exercitationem consectetur deleniti quod nam cupiditate quas!",
-    technologies: ["React", "Tailwindcss", "Node.js", "MongoDB"],
-    siteUrl : "#",
-  },
-  {
-    id: "01",
-    imgUrl: portfolioImg04,
-    category: "Web Design",
-    title: "Technology website",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut asperiores, consequuntur, quisquam deleniti ducimus maiores, nam soluta nostrum unde fugiat nulla? Unde exercitationem consectetur deleniti quod nam cupiditate quas!",
-    technologies: ["React", "Tailwindcss", "Node.js", "MongoDB"],
-    siteUrl : "#",
-  },
-  {
-    id: "01",
-    imgUrl: portfolioImg05,
-    category: "Web Design",
-    title: "Technology website",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut asperiores, consequuntur, quisquam deleniti ducimus maiores, nam soluta nostrum unde fugiat nulla? Unde exercitationem consectetur deleniti quod nam cupiditate quas!",
-    technologies: ["React", "Tailwindcss", "Node.js", "MongoDB"],
-    siteUrl : "#",
-  },
-  {
-    id: "01",
-    imgUrl: portfolioImg06,
-    category: "Web Design",
-    title: "Technology website",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut asperiores, consequuntur, quisquam deleniti ducimus maiores, nam soluta nostrum unde fugiat nulla? Unde exercitationem consectetur deleniti quod nam cupiditate quas!",
-    technologies: ["React", "Tailwindcss", "Node.js", "MongoDB"],
-    siteUrl : "#",
+      "Explore our responsive e-commerce site, crafted with HTML, CSS, and Bootstrap 5, ensuring seamless browsing on any device. Discover a diverse range of products where each product card features detailed descriptions, prices, and more.",
+    technologies: ["html", "css", "Bootstrap5"],
+    siteUrl: "https://ecommerce-website-bootstrap5.netlify.app/",
   },
 ];
 
