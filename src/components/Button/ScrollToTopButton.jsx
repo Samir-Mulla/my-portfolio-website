@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import  { useState } from "react";
+import { RiArrowUpLine } from "react-icons/ri";
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,13 +25,13 @@ function ScrollToTopButton() {
   window.addEventListener("scroll", toggleVisibility);
 
   return (
-    <div className="fixed bottom-8 right-8 z-10">
+    <div className="fixed bottom-16 right-6">
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="bg-gray-300 text-black font-bold py-2 px-4 rounded-md focus:outline-none font-customFont"
+          className="bg-gray-300 text-black font-bold py-2 px-4 rounded-md focus:outline-none font-customFont flex items-center gap-3"
         >
-          Scroll to Top
+          Scroll to Top <RiArrowUpLine size={30} />
         </button>
       )}
     </div>
