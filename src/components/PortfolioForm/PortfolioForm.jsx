@@ -48,17 +48,17 @@ function PortfolioForm() {
   return (
     <>
       <section
-        id="contactMe"
-        className="mt-32 bg-background3 bg-no-repeat scroll-mt-20"
+        id="contact"
+        className="mt-16 xl:bg-background3 bg-no-repeat scroll-mt-20"
       >
-        <h1 className="text-center font-thin italic text-8xl font-customFont">
+        <h1 className="text-center text-4xl md:text-6xl lg:text-8xl font-thin italic font-customFont">
           Contact<span className="underline">Me</span> :
         </h1>
 
-        <div className="py-20 font-customFont">
+        <div className="py-20 font-customFont p-2">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="space-y-4 max-w-md mx-auto p-6 rounded-md shadow-md border"
+            className="space-y-4 max-w-lg mx-auto p-6 rounded-md shadow-md border"
           >
             <div className="mb-4">
               <label
@@ -137,7 +137,7 @@ function PortfolioForm() {
                 id="BusinessSector"
                 {...register("BusinessSector", { required: true })}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm border text-xl px-3 py-3"
-                placeholder="Enter your Sector eg: Ecommerce, Healthcare."
+                placeholder="Enter your Industry Healthcare, Ecommerce."
               />
               {errors.BusinessSector && (
                 <span className="text-red-500">This field is required</span>
@@ -156,7 +156,7 @@ function PortfolioForm() {
                 id="BusinessRequirements"
                 {...register("BusinessRequirements", { required: true })}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm border text-xl px-3 py-3 h-36"
-                placeholder="eg : Our company sells high-quality fans for homes and businesses. We want to showcase these products on our website and enable transactions to occur."
+                placeholder="e.g : Our company specializes in the sale of high-performance graphic cards designed for both gaming enthusiasts and professional applications. We are dedicated to providing top-tier products that combine cutting-edge technology, superior performance, and exceptional durability."
               />
               {errors.BusinessRequirements && (
                 <span className="text-red-500">This field is required</span>
@@ -168,13 +168,14 @@ function PortfolioForm() {
                 htmlFor="Deadline"
                 className="block text-2xl font-medium text-gray-700"
               >
-                Deadline for Completion
+                Deadline for Project Completion
               </label>
               <input
                 type="date"
                 id="Deadline"
                 {...register("Deadline")}
                 className="border px-4 mt-3"
+                placeholder="select deadline date for project completion"
               />
             </div>
 
