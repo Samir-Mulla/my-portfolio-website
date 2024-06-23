@@ -7,6 +7,7 @@ import PortfolioForm from "./components/PortfolioForm/PortfolioForm";
 import ScrollToTopButton from "./components/Button/ScrollToTopButton";
 import CustomCursor from "./components/customCursor/customCursor";
 import Services from "./components/Services/services";
+import Projects from "./components/Projects/Projects"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Projects />
       <Skills />
       <Services />
       <CustomCursor />
