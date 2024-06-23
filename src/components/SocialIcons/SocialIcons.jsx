@@ -6,7 +6,7 @@ function SocialIcons() {
   return (
     <>
       <div className="mt-20">
-        <p className="text-3xl font-bold italic  text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-black">
+        <p className="text-2xl md:text-4xl lg:text-6xl font-bold italic  text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-black">
           <span className="">My Social Profiles :</span>
         </p>
         <div className="flex justify-center items-center gap-8 mt-4 text-sm">
