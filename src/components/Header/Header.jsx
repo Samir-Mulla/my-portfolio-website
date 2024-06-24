@@ -2,7 +2,8 @@
 import React from "react";
 import { RiMenuFoldFill } from "react-icons/ri";
 import Navbar from "../Navbar/Navbar";
-import Logo from "/Logo.svg";
+import Logo from "../Logo/Logo";
+
 import IconButton from "../Button/IconButton";
 // import { FaMoon, FaSun } from "react-icons/fa"; // Import the moon and sun icons
 
@@ -13,9 +14,7 @@ function Header() {
         {/* logo */}
         <div className="bg-white h-20 w-full fixed flex justify-around selection:bg-yellow-300 font-customFont border-b">
           <div className=" lg:block hidden md:hidden xl:flex items-center">
-            <a href="/home">
-              <img src={Logo} alt="Logo" />
-            </a>
+            <Logo />
           </div>
           {/* navbar */}
           <Navbar />
