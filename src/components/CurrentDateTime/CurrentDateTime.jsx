@@ -57,7 +57,7 @@ function CurrentDateTime() {
       <p>
         {currentDay}, {currentMonth} {currentDate}, {currentYear}
       </p>
-      <p className="mt-2">
+      <p className="mt-2 mb-6">
         {currentHour < 10 ? "0" + currentHour : currentHour}:
         {currentMinute < 10 ? "0" + currentMinute : currentMinute}:
         {currentSecond < 10 ? "0" + currentSecond : currentSecond} {ampm}

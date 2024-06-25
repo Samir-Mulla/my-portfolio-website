@@ -36,7 +36,7 @@ const Footer = () => {
           <h5 className="font-bold mb-2">Contact</h5>
           <div className="flex gap-3 items-center">
             <RxEnvelopeClosed size={25} />
-            Send Email ID : samirmulla710@gmail.com
+            My Email ID : samirmulla710@gmail.com
           </div>
 
           <div className="flex gap-3 items-center mt-2">
