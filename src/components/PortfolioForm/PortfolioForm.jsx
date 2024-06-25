@@ -172,10 +172,10 @@ function PortfolioForm() {
               </label>
               <input
                 type="date"
+                value=""
                 id="Deadline"
                 {...register("Deadline")}
-                className="border px-4 mt-3"
-                placeholder="select deadline date for project completion"
+                className="border px-4 mt-3" required
               />
             </div>
 
