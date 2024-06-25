@@ -7,4 +7,4 @@ My Portfolio Website is a personal project designed to showcase my skills, proje
 ## website UI 
 The website has a clean and minimalistic design, with a focus on showcasing my projects and skills.
 
-(public/portfolio-heroSection.png)
+![website UI](public/portfolio-heroSection.png)
