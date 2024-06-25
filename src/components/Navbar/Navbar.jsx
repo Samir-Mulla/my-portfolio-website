@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="lg:flex items-center md:flex hidden cursor-pointer font-semibold animate-fade-in">
+    <nav className="lg:flex items-center md:flex hidden  cursor-pointer font-semibold">
       <ul className="flex gap-9">
         <li
           className="hover:underline underline-offset-8 decoration-2"

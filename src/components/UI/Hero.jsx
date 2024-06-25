@@ -11,7 +11,7 @@ function Hero() {
           height="100%"
           viewBox="0 0 200 83"
           xmlns="http://www.w3.org/2000/svg"
-          className="bg-background1 bg-no-repeat animate-fade-in"
+          className="bg-background1 bg-no-repeat"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

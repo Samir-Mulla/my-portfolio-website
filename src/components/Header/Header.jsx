@@ -1,13 +1,18 @@
 // src/components/Header/Header.jsx
-import React from "react";
+import React ,{useState} from "react";
 import { RiMenuFoldFill } from "react-icons/ri";
 import Navbar from "../Navbar/Navbar";
 import Logo from "../Logo/Logo";
-
 import IconButton from "../Button/IconButton";
+import Sidebar from "../Sidebar/Sidebar"; // 
 // import { FaMoon, FaSun } from "react-icons/fa"; // Import the moon and sun icons
 
 function Header() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
   return (
     <>
       <header>
@@ -23,12 +28,13 @@ function Header() {
           </div>
 
           {/* mobile menu */}
-          <button className="md:hidden">
+          <button onClick={toggleSidebar} className="md:hidden">
             <RiMenuFoldFill size="2rem" />
           </button>
           {/* Dark mode toggle */}
         </div>
       </header>
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 }
