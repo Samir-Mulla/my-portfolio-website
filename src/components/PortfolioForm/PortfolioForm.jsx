@@ -175,7 +175,7 @@ function PortfolioForm() {
                 value=""
                 id="Deadline"
                 {...register("Deadline")}
-                className="border px-4 mt-3" required
+                className="border px-4 mt-3"
               />
             </div>
 
