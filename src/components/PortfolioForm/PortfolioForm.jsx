@@ -9,7 +9,6 @@ function PortfolioForm() {
     reset,
   } = useForm();
 
-
   // Use state to manage the phone number value
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -75,7 +74,7 @@ function PortfolioForm() {
                 placeholder="Enter your full name"
               />
               {errors.FullName && (
-                <span className="text-red-500">This field is required</span>
+                <span className="text-red-500">Full Name is required</span>
               )}
             </div>
 
@@ -97,7 +96,9 @@ function PortfolioForm() {
                 placeholder="Enter your email id"
               />
               {errors.email && (
-                <span className="text-red-500">Please enter a valid email</span>
+                <span className="text-red-500">
+                  Please enter a valid email, eg: example@gmail.com
+                </span>
               )}
             </div>
 
@@ -121,7 +122,7 @@ function PortfolioForm() {
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm border text-xl px-3 py-3"
               />
               {errors.phone && (
-                <span className="text-red-500">This field is required</span>
+                <span className="text-red-500">Phone Number is required</span>
               )}
             </div>
 
@@ -140,7 +141,9 @@ function PortfolioForm() {
                 placeholder="Enter your Industry Healthcare, Ecommerce."
               />
               {errors.BusinessSector && (
-                <span className="text-red-500">This field is required</span>
+                <span className="text-red-500">
+                  Business Sector or Industry is required
+                </span>
               )}
             </div>
 
@@ -159,7 +162,9 @@ function PortfolioForm() {
                 placeholder="e.g : Our company specializes in the sale of high-performance graphic cards designed for both gaming enthusiasts and professional applications. We are dedicated to providing top-tier products that combine cutting-edge technology, superior performance, and exceptional durability."
               />
               {errors.BusinessRequirements && (
-                <span className="text-red-500">This field is required</span>
+                <span className="text-red-500">
+                  Your Business Requirements are required
+                </span>
               )}
             </div>
 
@@ -168,13 +173,14 @@ function PortfolioForm() {
                 htmlFor="Deadline"
                 className="block text-2xl font-medium text-gray-700"
               >
-                Deadline for Project Completion
+                Select the date for the project completion deadline
               </label>
               <input
                 type="date"
                 id="Deadline"
                 {...register("Deadline")}
                 className="border px-4 mt-3"
+                title="Select Date"
               />
             </div>
 
