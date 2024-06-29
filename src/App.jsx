@@ -7,7 +7,8 @@ import PortfolioForm from "./components/PortfolioForm/PortfolioForm";
 import ScrollToTopButton from "./components/Button/ScrollToTopButton";
 import CustomCursor from "./components/customCursor/customCursor";
 import Services from "./components/Services/services";
-import Projects from "./components/Projects/Projects"
+import Projects from "./components/Projects/Projects";
+import LiveChatWidget from "./components/LiveChatWidget/LiveChatWidget";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <CustomCursor />
       <PortfolioForm />
       <ScrollToTopButton />
+      <LiveChatWidget />
       <Footer />
     </>
   );
