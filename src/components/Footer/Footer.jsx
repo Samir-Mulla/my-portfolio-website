@@ -13,7 +13,7 @@ const Footer = () => {
           <CurrentDateTime />
         </div>
         <div className="w-full md:w-1/3 mb-6 md:mb-0">
-          <h5 className="font-bold mb-2">Services</h5>
+          <h5 className="font-bold mb-2 text-2xl">Services</h5>
           <ul className="list-none">
             <li>
               <a href="#" className="text-white hover:text-gray-300">
@@ -33,7 +33,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-full md:w-1/3">
-          <h5 className="font-bold mb-2">Contact</h5>
+          <h5 className="font-bold mb-2 text-2xl">Contact</h5>
           <div className="flex gap-3 items-center">
             <RxEnvelopeClosed size={25} />
             My Email ID : samirmulla710@gmail.com
