@@ -4,12 +4,6 @@ import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 const LiveChatWidget = () => {
   const tawkMessengerRef = useRef(null);
 
-  const handleMinimize = () => {
-    if (tawkMessengerRef.current) {
-      tawkMessengerRef.current.minimize();
-    }
-  };
-
   const onLoad = () => {
     console.log("Tawk.to chat widget loaded!");
   };
@@ -18,7 +12,7 @@ const LiveChatWidget = () => {
     <div>
       <TawkMessengerReact
         propertyId={import.meta.env.VITE_TAWKTO_PROPERTY_ID}
-        widgetId="1i1jvvdef"
+        widgetId={import.meta.env.VITE_TAWKTO_WIDGET_ID}
         onLoad={onLoad}
         ref={tawkMessengerRef}
       />
