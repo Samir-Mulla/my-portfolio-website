@@ -1,36 +1,30 @@
-import { useEffect } from "react";
+import React, { useRef } from "react";
+import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
-function LiveChatWidget() {
-  useEffect(() => {
-    const propertyId = import.meta.env.VITE_TAWKTO_PROPERTY_ID;
+const LiveChatWidget = () => {
+  const tawkMessengerRef = useRef(null);
 
-    if (!propertyId) {
-      console.error(
-        "Tawk.to property ID is not defined. Check your environment variables."
-      );
-      return;
+  const handleMinimize = () => {
+    if (tawkMessengerRef.current) {
+      tawkMessengerRef.current.minimize();
     }
+  };
 
-    var Tawk_API = Tawk_API || {};
-    Tawk_API.onLoad = function () {
-      Tawk_API.addEvent("chat", {
-        type: "message",
-        message: "👋 Hi! How can we help you today?",
-      });
-    };
+  const onLoad = () => {
+    console.log("Tawk.to chat widget loaded!");
+  };
 
-    // Load Tawk.to script
-    (function () {
-      var s1 = document.createElement("script");
-      s1.async = true;
-      s1.src = `https://embed.tawk.to/${propertyId}`;
-      s1.setAttribute("crossorigin", "*");
-      var s0 = document.getElementsByTagName("script")[0];
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  }, []);
-
-  return null;
-}
+  return (
+    <div>
+      <button onClick={handleMinimize}>Minimize Chat</button>
+      <TawkMessengerReact
+        propertyId={import.meta.env.VITE_TAWKTO_PROPERTY_ID}
+        widgetId="1i1jvvdef"
+        onLoad={onLoad}
+        ref={tawkMessengerRef}
+      />
+    </div>
+  );
+};
 
 export default LiveChatWidget;
