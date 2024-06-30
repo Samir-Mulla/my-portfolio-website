@@ -16,7 +16,6 @@ const LiveChatWidget = () => {
 
   return (
     <div>
-      <button onClick={handleMinimize}>Minimize Chat</button>
       <TawkMessengerReact
         propertyId={import.meta.env.VITE_TAWKTO_PROPERTY_ID}
         widgetId="1i1jvvdef"
