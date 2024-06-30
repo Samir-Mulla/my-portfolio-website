@@ -6,6 +6,7 @@ const LiveChatWidget = () => {
 
   const onLoad = () => {
     console.log("Tawk.to chat widget loaded!");
+  
   };
 
   return (
@@ -13,7 +14,6 @@ const LiveChatWidget = () => {
       <TawkMessengerReact
         propertyId={import.meta.env.VITE_TAWKTO_PROPERTY_ID}
         widgetId={import.meta.env.VITE_TAWKTO_WIDGET_ID}
-        onLoad={onLoad}
         ref={tawkMessengerRef}
       />
     </div>
