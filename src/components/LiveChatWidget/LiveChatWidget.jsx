@@ -4,11 +4,6 @@ import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 const LiveChatWidget = () => {
   const tawkMessengerRef = useRef(null);
 
-  const onLoad = () => {
-    console.log("Tawk.to chat widget loaded!");
-  
-  };
-
   return (
     <div>
       <TawkMessengerReact
