@@ -7,8 +7,8 @@ const LiveChatWidget = () => {
   return (
     <div>
       <TawkMessengerReact
-        propertyId={import.meta.env.VITE_TAWKTO_PROPERTY_ID}
-        widgetId={import.meta.env.VITE_TAWKTO_WIDGET_ID}
+        propertyId="667ff4f0eaf3bd8d4d164efd"
+        widgetId="1i1jvvdef"
         ref={tawkMessengerRef}
       />
     </div>
