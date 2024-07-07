@@ -1,5 +1,5 @@
 import React from "react";
-import myProfile from "/my-portfolio-img.jpg";
+import myProfile from "/my-portfolio-img.png";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 function About() {
