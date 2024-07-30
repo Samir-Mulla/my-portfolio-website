@@ -8,7 +8,7 @@ const portfolios = [
     category: "Web Design",
     title: "College website",
     description:
-      "As the front-end developer of this college website, I focused on creating a modern and responsive user experience using React for dynamic content rendering and Vite for optimized build times. With a clean, CSS-based design.",
+      "As the front-end developer of this college website, I designed a modern and responsive user interface using React for building dynamic components and Vite for optimized build times. The clean, CSS-based design ensures a visually appealing and seamless experience.",
     technologies: ["React", "css", "vite", "Node.js"],
     siteUrl: "https://ilmcollege.netlify.app/",
   },
