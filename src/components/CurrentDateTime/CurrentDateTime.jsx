@@ -51,7 +51,7 @@ function CurrentDateTime() {
 
   return (
     <div>
-      <h5 className="font-bold mb-2 text-lg md:text-xl lg:text-2xl">
+      <h5 className="font-bold mb-2 text-2xl lg:text-2xl">
         Today's date and time:
       </h5>
       <p>
