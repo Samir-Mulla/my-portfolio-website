@@ -1,5 +1,5 @@
 import React from "react";
-import myProfile from "/my-portfolio-img.png";
+import myProfile from "/my-portfolio-img.jpeg";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 function About() {
@@ -15,7 +15,7 @@ function About() {
             src={myProfile}
             alt="my photo"
             loading="lazy"
-            className="rounded-lg animate-fade-in border-black bg-slate-200 p-6 max-w-full md:max-w-1/2"
+            className="rounded-lg animate-fade-in border-black bg-slate-200 p-6 w-full md:w-3/6  object-cover"
           />
           <article className="flex flex-col items-end justify-evenly border-4 border-b-0 border-blue-300 border-r-0 text-4xl not-italic px-10 rounded-lg text-balance bg-background2 bg-no-repeat">
             <p className="text-2xl md:text-4xl lg:text-6xl">
